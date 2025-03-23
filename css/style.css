@@ -1,0 +1,330 @@
+/* Daniel Jang */
+
+body {
+    font-family: 'ABeeZee';
+    line-height: 1.6;
+    background: #ffcb05;
+    color: #000000;
+    font-size: 1rem;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    border: 2px solid #ffffff;
+}
+
+/* Skip to Main Content Link */
+.skip a {
+    position: absolute;
+    top: -50px;
+    background: #ffcb05; /* Ensure visibility */
+    color: #00274C;
+    padding: 8px;
+}
+
+.skip a:focus {
+    top: 30px;
+    right: 30px;
+}
+
+/* Header & Navigation */
+header, nav {
+    display: grid;                      
+    grid-template-columns: 1fr;
+    background: #00274C;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header {
+    gap: 16px;
+    justify-items: center;
+}
+
+header a, footer a {
+    color: #ffcb05;
+    font-weight: bold;
+}
+
+
+/* Image Styles */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+    width: 100%; 
+    height: auto;
+}
+.umsi-image img {
+    width: 100px;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+    gap: 8px;
+}
+
+section {
+    justify-self: center; 
+    overflow: hidden;
+    padding: 15px; 
+}
+
+.skip, .umsi-image, h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.skip { 
+    grid-row: 1 / 2; 
+}
+
+.umsi-image { 
+    grid-row: 2 / 3; 
+}
+
+h1 { 
+    grid-row: 3 / 4; 
+}
+
+nav {
+    grid-row: 4 / 5;
+    display: flex;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+nav ul li a.active {  
+    font-size: 1.25rem;
+    padding: 8px;
+    background: #ffcb05;
+    color: #00274C;
+}
+
+/* Main Content */
+main {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.7rem;
+}
+
+h2 {
+    color: #00274C;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+strong {
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1a20c7;
+}
+
+p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #00274C;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+
+/* index.html content styling */
+.home-welcome {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    
+}
+.home-list {
+    font-weight: bold;
+}
+.physical-health {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+.physical-health p {
+    font-style: italic;
+}
+.mental-health {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+.outside-class {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+/* first_gen.html content styling */
+.graduation-celebration, .stats-chart p, .first-question {
+    text-align: center;
+}
+
+
+/*tutor.html with some degree.html content styling */
+
+.container-tutor, .container-degree {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    gap: 8px;
+}
+
+.container-tutor ul {
+    padding-left: 30px;
+}
+
+.about-academic {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.students-image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.law-image {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.main-purpose{
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.programming-list {
+    grid-column: 1 / 2;
+}
+
+.math-list {
+    grid-column: 2 / 3;
+}
+
+.programming-list, .math-list {
+    grid-row: 4 / 5;
+}
+
+.peer-tutoring {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+}
+
+.shapiro-image {
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+}
+
+.book-appointment, .programming-tutor, .math-tutor{
+    grid-column: 1 / -1;
+}
+
+.book-appointment{
+    grid-row: 7 / 8;
+}
+
+.programming-tutor{
+    grid-row: 8 / 9;
+}
+
+.math-tutor{
+    grid-row: 9 / 10;
+}
+
+.contact-info{
+    grid-column: 1 / -1;
+    text-align: center;
+    grid-row: 10 / 11;
+}
+
+
+/* degree.html content styling */
+.degree-welcome {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.container-degree h2 {
+    padding-bottom: 20px;
+}
+
+.student-image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3
+}
+
+.union-image {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3
+}
+
+.first-step {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.second-step {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+.second-step p {
+    font-style: italic;
+}
+
+.third-step {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+}
+
+.angell-image {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7
+}
+
+.ross-image {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+.monitor-progress {
+    grid-column: 1 / -1;
+    grid-row: 7 / 8;
+}
