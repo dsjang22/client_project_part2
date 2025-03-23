@@ -12,7 +12,7 @@
 <body>
 
 <header>
-    <div class="skip"><a href="index.html">Skip to Main Content</a></div>
+    <div class="skip"><a href="#degree_main">Skip to Main Content</a></div>
     <div class="umsi-image" id="umsi">
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
       </div>
@@ -27,8 +27,8 @@
     </nav>
 </header>
 
-<main class="container-degree" id = "degree">
-    <section class="degree-welcome" id="welcome">
+<main class="container-degree" id = "degree_main">
+    <section class="degree-welcome" id="welcome" tabindex="0">
         <h2>Welcome</h2>
         <p>This registration page will provide instructional information to assist you and monitor your progress towards degree completion here at the University of Michigan.</p>
     </section>
@@ -102,8 +102,13 @@
 </main>
 
 <footer>
-    <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+    <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> </p>
+    <p>Contact: <a href="mailto:msi-advising@umich.edu">msi-advising@umich.edu</a> | Phone: (734) 615-5000</p>
+    <p>© Copyrights <span id="year"></span> by University of Michigan - School of Information. All rights reserved.</p>
 </footer>
+<script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 
 </body>
 </html>

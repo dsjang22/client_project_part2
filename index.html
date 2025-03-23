@@ -12,7 +12,7 @@
 </head>
 <body>      
     <header>
-        <div class="skip"><a href="index.html">Skip to Main Content</a></div>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <div class="umsi-image" id="umsi">
             <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
           </div>
@@ -28,7 +28,7 @@
     </header>
 
     <main class="container" id = "main">
-        <section class="home-welcome" id = "welcome">
+        <section class="home-welcome" id = "welcome" tabindex="0">
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p>This guide is set up to help you be successful inside and outside of the classroom, and we have included the following resources throughout our site:</p>
             <ol class="home-list">
@@ -40,7 +40,7 @@
             </ol>
         </section>
 
-        <section class="physical-health" id = "physical">
+        <section class="physical-health" id = "physical" tabindex="0">
             <h2>Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
             <article class="UHS-article" id = "UHS">
@@ -59,7 +59,7 @@
             </article>
         </section>
         
-        <section class="mental-health" id = "mental">
+        <section class="mental-health" id = "mental" tabindex="0">
             <h2>Mental Health</h2>
             <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
             <ol>
@@ -70,7 +70,7 @@
             </ol>
         </section>
         
-        <section class="outside-class" id="life-outside-classroom">
+        <section class="outside-class" id="life-outside-classroom" tabindex="0">
             <h2>Life Outside the Classroom</h2>
             <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
             <ul>
@@ -86,8 +86,14 @@
     </main>
 
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> </p>
+        <p>Contact: <a href="mailto:msi-advising@umich.edu">msi-advising@umich.edu</a> | Phone: (734) 615-5000</p>
+        <p>© Copyrights <span id="year"></span> by University of Michigan - School of Information. All rights reserved.</p>
     </footer>
+    <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    
 </body>
 </html>
 

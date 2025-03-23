@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <div class="skip"><a href="index.html">Skip to Main Content</a></div>
+        <div class="skip"><a href="#tutor_main">Skip to Main Content</a></div>
         <div class="umsi-image" id="umsi">
             <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
           </div>
@@ -27,13 +27,13 @@
         </nav>
     </header>
 
-    <main class="container-tutor" id = "tutor">
-            <section class="about-academic" id ="about">
+    <main class="container-tutor" id = "tutor_main">
+            <section class="about-academic" id ="about" tabindex="0">
                 <h2>About the Academic Success Team</h2>
                 <p>The Academic Success Team at UMSI is dedicated to supporting students inside and outside of the classroom.</p>
             </section>
 
-            <section class="main-purpose" id ="purpose">
+            <section class="main-purpose" id ="purpose" tabindex="0">
                 <h2>UMSI Peer Tutoring</h2>
                 <p><b>The main purpose of this website is to help students connect with other students and support resources. Information about resources is provided, including courses:</b></p>
             </section>
@@ -59,7 +59,7 @@
                 </ul>
             </section>
 
-            <section class="peer-tutoring" id="peer">
+            <section class="peer-tutoring" id="peer" tabindex="0">
                 <h2>Peer-to-Peer Tutor Directory</h2>
                 <p>UMSI Students serve as private tutors for SI courses and related content areas. Use this <a href="https://docs.google.com/spreadsheets/d/11CtKRblVZq3kcsD9Jp99g9GoMChfesv0JnbgZX31cZQ/edit?gid=0#gid=0">link</a> to see those who are interested in becoming one.</p>
             </section>
@@ -76,7 +76,7 @@
                     <img src="images/MCOMMONS-WinterSemester2025-15.jpg" alt="Picture of the Shapiro Library Building" width="300" height="200">
                 </div>
 
-            <section class="book-appointment" id="appointment">
+            <section class="book-appointment" id="appointment" >
                 <h2>Book Appointments</h2>
             </section>
 
@@ -130,8 +130,13 @@
     </main>
 
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> </p>
+        <p>Contact: <a href="mailto:msi-advising@umich.edu">msi-advising@umich.edu</a> | Phone: (734) 615-5000</p>
+        <p>© Copyrights <span id="year"></span> by University of Michigan - School of Information. All rights reserved.</p>
     </footer>
+    <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 </html>
