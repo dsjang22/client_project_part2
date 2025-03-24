@@ -382,4 +382,128 @@ footer {
     border: 2px solid #00274C;
 }
 
+/* Desktop/tablet View */
+@media(min-width: 600px) {
 
+    /* Implementation for the overall structure of all pages */
+    section {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+
+    .container, .container-first_gen, .container-tutor, .container-degree {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    img {
+        width: 75%;  
+    }
+
+    .home-welcome p, .physical-health p, .mental-health p, .outside-class p, .container-degree p, 
+    .monitor-progress p, .first-generation-gateway p, .about-academic p, .main-purpose p, .peer-tutoring p {
+        font-size: 19px;
+        text-align: center; 
+        font-style: italic;
+    }
+
+
+    /* New Implmentations for the Student Success Portal Page */
+    .home-welcome ol {
+        justify-self: center; 
+    }
+
+    .physical-section p {
+        font-style: normal;
+    }
+
+    .physical-section {
+        display: flex;
+        gap: 30px; 
+    }
+
+    .physical-section article {
+        display: flex; 
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    /* New Implmentations for the UMSI Tutoring & Academic Support Page */
+    .programming-tutor{
+        grid-row: 8 / 9;
+        grid-column: 1 / 2;
+    }
+    
+    .math-tutor{
+        grid-row: 8 / 9;
+        grid-column: 2 / 3;
+    }
+    
+    .contact-info{
+        grid-row: 9 / 10;
+    }
+
+    
+    /* New Implmentations for the Michigan First Generation Page */
+    .container-first_gen ul, .container-first_gen p {
+        justify-self: center; 
+    }
+
+    .container-first_gen p {
+        text-align: center;
+    }
+
+    .container-first_gen {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto; 
+        gap: 8px;
+    }
+
+    .stats-chart {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .bigM-image {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .first-definition {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+
+    .gameday-image {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .graduation-celebration {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+
+    .graduation-image {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .first-generation-gateway {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
+
+    .time-information {
+        grid-column: 1 / -1;
+        grid-row: 6 / 7;
+    }
+}
