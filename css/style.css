@@ -262,7 +262,7 @@ footer {
     grid-row: 6 / 7;
 }
 
-.book-appointment, .programming-tutor, .math-tutor{
+.book-appointment, .programming-tutor, .math-tutor, .tutor-request{
     grid-column: 1 / -1;
 }
 
@@ -278,10 +278,24 @@ footer {
     grid-row: 9 / 10;
 }
 
+.tutor-request{
+    grid-row: 10 / 11;
+}
+
+.tutor-request h2{
+    padding-bottom: 20px;
+}
+
 .contact-info{
     grid-column: 1 / -1;
     text-align: center;
-    grid-row: 10 / 11;
+    grid-row: 11 / 12;
+}
+
+#message {
+    width: 95%; /* Makes it take 95% of its container */
+    height: 150px; 
+    padding: 10px; 
 }
 
 
@@ -383,11 +397,15 @@ footer {
 }
 
 /* Desktop/tablet View */
-@media(min-width: 600px) {
+@media(min-width: 725px) {
 
     /* Implementation for the overall structure of all pages */
     section {
         width: 80%;
+    }
+
+    nav ul li {
+        margin: 0 15px;
     }
 
     h1 {
@@ -410,7 +428,7 @@ footer {
 
     .home-welcome p, .physical-health p, .mental-health p, .outside-class p, .container-degree p, 
     .monitor-progress p, .first-generation-gateway p, .about-academic p, .main-purpose p, .peer-tutoring p {
-        font-size: 19px;
+        font-size: 22px;
         text-align: center; 
         font-style: italic;
     }
@@ -447,10 +465,13 @@ footer {
         grid-column: 2 / 3;
     }
     
-    .contact-info{
+    .tutor-request{
         grid-row: 9 / 10;
     }
 
+    .contact-info{
+        grid-row: 10 / 11;
+    }
     
     /* New Implmentations for the Michigan First Generation Page */
     .container-first_gen ul, .container-first_gen p {

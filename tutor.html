@@ -126,11 +126,50 @@
                 </ol>
             </section>
 
+            <section class="tutor-request" id = "form" tabindex="0">
+                <h2>Request a Tutoring Session</h2>
+                <form id="tutor-form">
+                    <div id="nameDiv">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+            
+                    <div id="emailDiv">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div id="courseDiv">
+                        <label for="course">Course Needing Help:</label>
+                        <select id="course" name="course">
+                            <option value="SI 106">SI 106</option>
+                            <option value="SI 206">SI 206</option>
+                            <option value="SI 506">SI 301</option>
+                            <option value="SI 506">SI 330</option>
+                            <option value="SI 506">SI 370</option>
+                            <option value="SI 506">SI 506</option>
+                            <option value="SI 506">SI 507</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>  
+                    
+                    <div id="messageDiv">
+                        <label for="message">Additional Comments:</label>
+                    <textarea id="message" name="message"></textarea>
+                    </div>
+                    
+                    <button type="submit">Submit Request</button>
+                </form>
+                <p id="confirmation-message"></p>
+            </section>
+
+
             <div class="contact-info" id="contact"> 
                 <b>Contact <a href="mailto:umsi.academicssuccess@umich.edu">umsi.academicssuccess@umich.edu</a> for further questions about anything</b>
             </div>
-
+            
     </main>
+    <script src="js/jsTutor.js"></script>
 
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> </p>
@@ -140,6 +179,6 @@
     <script>
             document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
-    
+
 </body>
 </html>
